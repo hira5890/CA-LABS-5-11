@@ -1,0 +1,10 @@
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto 179cc3e6896c414bbcbce1cb7d690cc5 --incr --debug typical --relax --mt 2 --maxdelay -L xil_defaultlib -L simprims_ver -L secureip --snapshot MemorySystem_tb_time_impl -transport_int_delays -pulse_r 0 -pulse_int_r 0 -pulse_e 0 -pulse_int_e 0 xil_defaultlib.MemorySystem_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 10 differs from formal bit length 16 for port 'switches' [C:/Users/DELL/Downloads/lab888/lab888.srcs/sim_1/new/MemorySystem_tb.v:18]
+ERROR: [VRFC 10-3236] concurrent assignment to a non-net 'switches' is not permitted [C:/Users/DELL/Downloads/lab888/lab888.srcs/sim_1/new/MemorySystem_tb.v:19]
+ERROR: [VRFC 10-2922] 'addressDecoderTop' expects 7 arguments [C:/Users/DELL/Downloads/lab888/lab888.srcs/sim_1/new/MemorySystem_tb.v:12]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.

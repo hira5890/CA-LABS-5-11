@@ -1,0 +1,7 @@
+Vivado Simulator 2020.1
+Time resolution is 1 ps
+TEST 1 - LED Write: leds = 000000 (expected 000111)
+TEST 2 - Switch Read: leds = 010101 (expected 010101)
+TEST 3 - Memory Write: nothing on leds = 000000 (expected 000000)
+TEST 4 - Memory Read: leds = 000111 (expected 000111)
+$stop called at time : 210 ns : File "C:/Users/DELL/Downloads/lab8sidrahira/lab888.srcs/sim_1/new/MemorySystem_tb.v" Line 95

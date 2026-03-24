@@ -1,0 +1,7 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/DELL/Downloads/lab888/lab888.sim/sim_1/impl/timing/xsim/MemorySystem_tb_time_impl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AddressDecoder
+INFO: [VRFC 10-311] analyzing module LEDInterface
+INFO: [VRFC 10-311] analyzing module addressDecoderTop
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/DELL/Downloads/lab888/lab888.srcs/sim_1/new/MemorySystem_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MemorySystem_tb

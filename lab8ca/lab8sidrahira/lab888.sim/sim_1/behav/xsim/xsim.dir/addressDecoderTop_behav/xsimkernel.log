@@ -1,0 +1,7 @@
+Running: xsim.dir/addressDecoderTop_behav/xsimk.exe -simmode gui -wdb addressDecoderTop_behav.wdb -simrunnum 0 -socket 55564
+Design successfully loaded
+Design Loading Memory Usage: 8552 KB (Peak: 8552 KB)
+Design Loading CPU Usage: 62 ms
+Simulation completed
+Simulation Memory Usage: 9320 KB (Peak: 9320 KB)
+Simulation CPU Usage: 296 ms
