@@ -1,0 +1,6 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/hira6/Downloads/lab_6_ca/lab6hirasidrah/lab6hirasidrah.srcs/sources_1/new/RISCVALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RISCVALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/hira6/Downloads/lab_6_ca/lab6hirasidrah/lab6hirasidrah.srcs/sources_1/new/alu.tb" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RISCVALU_tb_small
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/hira6/Downloads/lab_6_ca/lab6hirasidrah/lab6hirasidrah.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl

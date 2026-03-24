@@ -1,0 +1,4 @@
+Running: xsim.dir/RISCVALU_tb_small_behav/xsimk.exe -simmode gui -wdb RISCVALU_tb_small_behav.wdb -simrunnum 0 -socket 50268
+Design successfully loaded
+Design Loading Memory Usage: 8420 KB (Peak: 8420 KB)
+Design Loading CPU Usage: 0 ms

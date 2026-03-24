@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Wed Mar 25 01:42:16 2026
+# Process ID: 16452
+# Current directory: C:/Users/hira6/Downloads/lab_6_ca/lab6hirasidrah/lab6hirasidrah.runs/synth_1
+# Command line: vivado.exe -log ALU_TOP_SWITCH.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source ALU_TOP_SWITCH.tcl
+# Log file: C:/Users/hira6/Downloads/lab_6_ca/lab6hirasidrah/lab6hirasidrah.runs/synth_1/ALU_TOP_SWITCH.vds
+# Journal file: C:/Users/hira6/Downloads/lab_6_ca/lab6hirasidrah/lab6hirasidrah.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source ALU_TOP_SWITCH.tcl -notrace

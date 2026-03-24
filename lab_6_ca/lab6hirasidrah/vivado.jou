@@ -1,0 +1,36 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Wed Mar 25 01:38:34 2026
+# Process ID: 18588
+# Current directory: C:/Users/hira6/Downloads/lab_6_ca/lab6hirasidrah
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent18472 C:\Users\hira6\Downloads\lab_6_ca\lab6hirasidrah\lab6hirasidrah.xpr
+# Log file: C:/Users/hira6/Downloads/lab_6_ca/lab6hirasidrah/vivado.log
+# Journal file: C:/Users/hira6/Downloads/lab_6_ca/lab6hirasidrah\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/hira6/Downloads/lab_6_ca/lab6hirasidrah/lab6hirasidrah.xpr
+update_compile_order -fileset sources_1
+close [ open C:/Users/hira6/Downloads/lab_6_ca/lab6hirasidrah/lab6hirasidrah.srcs/sources_1/new/debouncer.v w ]
+add_files C:/Users/hira6/Downloads/lab_6_ca/lab6hirasidrah/lab6hirasidrah.srcs/sources_1/new/debouncer.v
+close [ open C:/Users/hira6/Downloads/lab_6_ca/lab6hirasidrah/lab6hirasidrah.srcs/sources_1/new/Led.v w ]
+add_files C:/Users/hira6/Downloads/lab_6_ca/lab6hirasidrah/lab6hirasidrah.srcs/sources_1/new/Led.v
+close [ open C:/Users/hira6/Downloads/lab_6_ca/lab6hirasidrah/lab6hirasidrah.srcs/sources_1/new/switches.v w ]
+add_files C:/Users/hira6/Downloads/lab_6_ca/lab6hirasidrah/lab6hirasidrah.srcs/sources_1/new/switches.v
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files C:/Users/hira6/Downloads/lab_6_ca/lab6/debounchercorrect.v] -no_script -reset -force -quiet
+remove_files  C:/Users/hira6/Downloads/lab_6_ca/lab6/debounchercorrect.v
+export_ip_user_files -of_objects  [get_files C:/Users/hira6/Downloads/lab_6_ca/lab6/ledcorrect.v] -no_script -reset -force -quiet
+remove_files  C:/Users/hira6/Downloads/lab_6_ca/lab6/ledcorrect.v
+export_ip_user_files -of_objects  [get_files C:/Users/hira6/Downloads/lab_6_ca/lab6/switchescorrect.v] -no_script -reset -force -quiet
+remove_files  C:/Users/hira6/Downloads/lab_6_ca/lab6/switchescorrect.v
+reset_run synth_1
+launch_runs synth_1 -jobs 6
+wait_on_run synth_1
+launch_runs impl_1 -jobs 6
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+launch_simulation
+source RISCVALU_tb_small.tcl
