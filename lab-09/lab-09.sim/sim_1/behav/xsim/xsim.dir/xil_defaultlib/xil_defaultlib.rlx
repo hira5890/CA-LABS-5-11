@@ -1,0 +1,11 @@
+0.7
+2020.1
+May 27 2020
+20:09:33
+C:/Users/hira6/Downloads/lab-09/lab-09/lab-09.sim/sim_1/behav/xsim/glbl.v,1774197941,verilog,,,,glbl,,,,,,,,
+C:/Users/hira6/Downloads/lab-09/lab-09/lab-09.srcs/sim_1/new/control_tb.v,1774379822,verilog,,C:/Users/hira6/Downloads/lab-09/lab-09/lab-09.srcs/sources_1/new/leds.v,,control_tb,,,,,,,,
+C:/Users/hira6/Downloads/lab-09/lab-09/lab-09.srcs/sources_1/new/ALUControl.v,1774371217,verilog,,C:/Users/hira6/Downloads/lab-09/lab-09/lab-09.srcs/sources_1/new/MainControl.v,,ALUControl,,,,,,,,
+C:/Users/hira6/Downloads/lab-09/lab-09/lab-09.srcs/sources_1/new/MainControl.v,1774371208,verilog,,C:/Users/hira6/Downloads/lab-09/lab-09/lab-09.srcs/sim_1/new/control_tb.v,,MainControl,,,,,,,,
+,,,,,,,,,,,,,,
+C:/Users/hira6/Downloads/lab-09/lab-09/lab-09.srcs/sources_1/new/switches.v,1774197942,verilog,,C:/Users/hira6/Downloads/lab-09/lab-09/lab-09.srcs/sources_1/new/top_control_fpga.v,,switches,,,,,,,,
+C:/Users/hira6/Downloads/lab-09/lab-09/lab-09.srcs/sources_1/new/top_control_fpga.v,1774371190,verilog,,,,top_control_fpga,,,,,,,,
