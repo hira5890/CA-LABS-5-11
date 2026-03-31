@@ -1,0 +1,93 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Tue Mar 31 21:28:35 2026
+# Process ID: 4128
+# Current directory: C:/Users/hira6/Downloads/lab la - Copy - Copy/project_1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent28416 C:\Users\hira6\Downloads\lab la - Copy - Copy\project_1\project_1.xpr
+# Log file: C:/Users/hira6/Downloads/lab la - Copy - Copy/project_1/vivado.log
+# Journal file: C:/Users/hira6/Downloads/lab la - Copy - Copy/project_1\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/hira6/Downloads/lab la - Copy - Copy/project_1/project_1.xpr}
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.1/data/ip'.
+open_project: Time (s): cpu = 00:00:15 ; elapsed = 00:00:07 . Memory (MB): peak = 1026.930 ; gain = 0.000
+update_compile_order -fileset sources_1
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/hira6/Downloads/lab la - Copy - Copy/project_1/project_1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'RF_ALU_FSM_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/hira6/Downloads/lab la - Copy - Copy/project_1/project_1.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj RF_ALU_FSM_tb_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/hira6/Downloads/lab la - Copy - Copy/project_1/project_1.sim/sim_1/behav/xsim'
+"xelab -wto 75ee8acdb28a4627abb7676c50734e74 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot RF_ALU_FSM_tb_behav xil_defaultlib.RF_ALU_FSM_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto 75ee8acdb28a4627abb7676c50734e74 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot RF_ALU_FSM_tb_behav xil_defaultlib.RF_ALU_FSM_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/hira6/Downloads/lab la - Copy - Copy/project_1/project_1.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "RF_ALU_FSM_tb_behav -key {Behavioral:sim_1:Functional:RF_ALU_FSM_tb} -tclbatch {RF_ALU_FSM_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.1
+Time resolution is 1 ps
+source RF_ALU_FSM_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Time | State | ALUctl | ALUout | Zero | x1 | x2 | x3 | x4 | x31 | x11
+0 | xxxx   | 0000    | 00000000  | 1   | 00000000 | 00000000 | 00000000 | 00000000 | 00000000 | 00000000
+20000 | 0000   | 0000    | 00000000  | 1   | 00000000 | 00000000 | 00000000 | 00000000 | 00000000 | 00000000
+25000 | 0001   | 0000    | 00000000  | 1   | 00000000 | 00000000 | 00000000 | 00000000 | 00000000 | 00000000
+35000 | 0001   | 0000    | 00000000  | 1   | 10101010 | 00000000 | 00000000 | 00000000 | 00000000 | 00000000
+45000 | 0001   | 0000    | 00000000  | 1   | 10101010 | 01010101 | 00000000 | 00000000 | 00000000 | 00000000
+55000 | 0001   | 0000    | 00000000  | 1   | 10101010 | 01010101 | 00000005 | 00000000 | 00000000 | 00000000
+65000 | 0010   | 0000    | 00000000  | 1   | 10101010 | 01010101 | 00000005 | 00000000 | 00000000 | 00000000
+75000 | 0010   | 0010    | 11111111  | 0   | 10101010 | 01010101 | 00000005 | 00000000 | 00000000 | 00000000
+85000 | 0010   | 0010    | 11111111  | 0   | 10101010 | 01010101 | 00000005 | 11111111 | 00000000 | 00000000
+95000 | 0010   | 0110    | 0f0f0f0f  | 0   | 10101010 | 01010101 | 00000005 | 11111111 | 00000000 | 00000000
+105000 | 0010   | 0000    | 00000000  | 1   | 10101010 | 01010101 | 00000005 | 11111111 | 00000000 | 00000000
+115000 | 0010   | 0001    | 11111111  | 0   | 10101010 | 01010101 | 00000005 | 11111111 | 00000000 | 00000000
+125000 | 0010   | 1010    | 11111111  | 0   | 10101010 | 01010101 | 00000005 | 11111111 | 00000000 | 00000000
+135000 | 0010   | 1000    | 20202020  | 0   | 10101010 | 01010101 | 00000005 | 11111111 | 00000000 | 00000000
+145000 | 0010   | 1001    | 08080808  | 0   | 10101010 | 01010101 | 00000005 | 11111111 | 00000000 | 00000000
+155000 | 0011   | 1001    | 08080808  | 0   | 10101010 | 01010101 | 00000005 | 11111111 | 00000000 | 00000000
+165000 | 0011   | 0110    | 00000000  | 1   | 10101010 | 01010101 | 00000005 | 11111111 | 00000000 | 00000000
+175000 | 0011   | 0110    | 00000000  | 1   | 10101010 | 01010101 | 00000005 | 11111111 | 00000001 | 00000000
+185000 | 0100   | 0110    | 00000000  | 1   | 10101010 | 01010101 | 00000005 | 11111111 | 00000001 | 00000000
+195000 | 0100   | 0110    | 00000000  | 1   | 10101010 | 01010101 | 00000005 | 11111111 | 00000001 | a5a5a5a5
+205000 | 0100   | 0110    | a5a5a5a0  | 0   | 10101010 | 01010101 | 00000005 | 11111111 | 00000001 | a5a5a5a5
+215000 | 0101   | 0110    | a5a5a5a0  | 0   | 10101010 | 01010101 | 00000005 | 11111111 | 00000001 | a5a5a5a5
+Simulation finished.
+$stop called at time : 225 ns : File "C:/Users/hira6/Downloads/lab la - Copy - Copy/project_1/project_1.srcs/sim_1/new/tb.v" Line 154
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'RF_ALU_FSM_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:06 ; elapsed = 00:00:09 . Memory (MB): peak = 1026.930 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue Mar 31 21:33:17 2026...

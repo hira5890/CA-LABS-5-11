@@ -1,0 +1,112 @@
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
+| Date         : Sat Mar 14 22:54:25 2026
+| Host         : Hira running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file RF_ALU_TOP_control_sets_placed.rpt
+| Design       : RF_ALU_TOP
+| Device       : xc7a35ti
+---------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    34 |
+|    Minimum number of control sets                        |    34 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |    11 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    34 |
+| >= 0 to < 4        |     0 |
+| >= 4 to < 6        |     1 |
+| >= 6 to < 8        |     0 |
+| >= 8 to < 10       |     1 |
+| >= 10 to < 12      |     0 |
+| >= 12 to < 14      |     0 |
+| >= 14 to < 16      |     0 |
+| >= 16              |    32 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |               0 |            0 |
+| No           | No                    | Yes                    |              23 |            6 |
+| No           | Yes                   | No                     |               0 |            0 |
+| Yes          | No                    | No                     |               0 |            0 |
+| Yes          | No                    | Yes                    |            1006 |          512 |
+| Yes          | Yes                   | No                     |               0 |            0 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++----------------+----------------------------------------------------+------------------+------------------+----------------+--------------+
+|  Clock Signal  |                    Enable Signal                   | Set/Reset Signal | Slice Load Count | Bel Load Count | Bels / Slice |
++----------------+----------------------------------------------------+------------------+------------------+----------------+--------------+
+|  clk_IBUF_BUFG | fsm_inst/saved_rs1_addr                            | rst_IBUF         |                3 |              5 |         1.67 |
+|  clk_IBUF_BUFG | fsm_inst/saved_rs2_addr                            | rst_IBUF         |                5 |              9 |         1.80 |
+|  clk_IBUF_BUFG |                                                    | rst_IBUF         |                6 |             23 |         3.83 |
+|  clk_IBUF_BUFG | fsm_inst/FSM_sequential_current_state_reg[0]_1[0]  | rst_IBUF         |               18 |             32 |         1.78 |
+|  clk_IBUF_BUFG | fsm_inst/FSM_sequential_current_state_reg[0]_10[0] | rst_IBUF         |               19 |             32 |         1.68 |
+|  clk_IBUF_BUFG | fsm_inst/E[0]                                      | rst_IBUF         |               14 |             32 |         2.29 |
+|  clk_IBUF_BUFG | fsm_inst/FSM_sequential_current_state_reg[0]_11[0] | rst_IBUF         |               18 |             32 |         1.78 |
+|  clk_IBUF_BUFG | fsm_inst/FSM_sequential_current_state_reg[0]_20[0] | rst_IBUF         |               16 |             32 |         2.00 |
+|  clk_IBUF_BUFG | fsm_inst/FSM_sequential_current_state_reg[0]_16[0] | rst_IBUF         |               16 |             32 |         2.00 |
+|  clk_IBUF_BUFG | fsm_inst/FSM_sequential_current_state_reg[0]_22[0] | rst_IBUF         |               13 |             32 |         2.46 |
+|  clk_IBUF_BUFG | fsm_inst/FSM_sequential_current_state_reg[0]_24[0] | rst_IBUF         |               15 |             32 |         2.13 |
+|  clk_IBUF_BUFG | fsm_inst/FSM_sequential_current_state_reg[0]_28[0] | rst_IBUF         |               15 |             32 |         2.13 |
+|  clk_IBUF_BUFG | fsm_inst/FSM_sequential_current_state_reg[0]_23[0] | rst_IBUF         |               16 |             32 |         2.00 |
+|  clk_IBUF_BUFG | fsm_inst/FSM_sequential_current_state_reg[0]_4[0]  | rst_IBUF         |               13 |             32 |         2.46 |
+|  clk_IBUF_BUFG | fsm_inst/FSM_sequential_current_state_reg[0]_18[0] | rst_IBUF         |               14 |             32 |         2.29 |
+|  clk_IBUF_BUFG | fsm_inst/FSM_sequential_current_state_reg[0]_17[0] | rst_IBUF         |               17 |             32 |         1.88 |
+|  clk_IBUF_BUFG | fsm_inst/FSM_sequential_current_state_reg[0]_5[0]  | rst_IBUF         |               12 |             32 |         2.67 |
+|  clk_IBUF_BUFG | fsm_inst/FSM_sequential_current_state_reg[0]_13[0] | rst_IBUF         |               18 |             32 |         1.78 |
+|  clk_IBUF_BUFG | fsm_inst/FSM_sequential_current_state_reg[0]_0[0]  | rst_IBUF         |               20 |             32 |         1.60 |
+|  clk_IBUF_BUFG | fsm_inst/FSM_sequential_current_state_reg[0]_29[0] | rst_IBUF         |               15 |             32 |         2.13 |
+|  clk_IBUF_BUFG | fsm_inst/FSM_sequential_current_state_reg[0]_26[0] | rst_IBUF         |               19 |             32 |         1.68 |
+|  clk_IBUF_BUFG | fsm_inst/FSM_sequential_current_state_reg[0]_3[0]  | rst_IBUF         |               24 |             32 |         1.33 |
+|  clk_IBUF_BUFG | fsm_inst/FSM_sequential_current_state_reg[0]_15[0] | rst_IBUF         |               15 |             32 |         2.13 |
+|  clk_IBUF_BUFG | fsm_inst/FSM_sequential_current_state_reg[0]_19[0] | rst_IBUF         |               13 |             32 |         2.46 |
+|  clk_IBUF_BUFG | fsm_inst/FSM_sequential_current_state_reg[0]_14[0] | rst_IBUF         |               21 |             32 |         1.52 |
+|  clk_IBUF_BUFG | fsm_inst/FSM_sequential_current_state_reg[0]_25[0] | rst_IBUF         |               13 |             32 |         2.46 |
+|  clk_IBUF_BUFG | fsm_inst/FSM_sequential_current_state_reg[0]_27[0] | rst_IBUF         |               20 |             32 |         1.60 |
+|  clk_IBUF_BUFG | fsm_inst/FSM_sequential_current_state_reg[0]_7[0]  | rst_IBUF         |               15 |             32 |         2.13 |
+|  clk_IBUF_BUFG | fsm_inst/FSM_sequential_current_state_reg[0]_6[0]  | rst_IBUF         |               14 |             32 |         2.29 |
+|  clk_IBUF_BUFG | fsm_inst/FSM_sequential_current_state_reg[0]_2[0]  | rst_IBUF         |               19 |             32 |         1.68 |
+|  clk_IBUF_BUFG | fsm_inst/FSM_sequential_current_state_reg[0]_21[0] | rst_IBUF         |               17 |             32 |         1.88 |
+|  clk_IBUF_BUFG | fsm_inst/FSM_sequential_current_state_reg[0]_8[0]  | rst_IBUF         |               17 |             32 |         1.88 |
+|  clk_IBUF_BUFG | fsm_inst/FSM_sequential_current_state_reg[0]_12[0] | rst_IBUF         |               15 |             32 |         2.13 |
+|  clk_IBUF_BUFG | fsm_inst/FSM_sequential_current_state_reg[0]_9[0]  | rst_IBUF         |               13 |             32 |         2.46 |
++----------------+----------------------------------------------------+------------------+------------------+----------------+--------------+
+
+

@@ -1,0 +1,186 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Tue Mar 31 21:02:56 2026
+# Process ID: 25628
+# Current directory: C:/Users/hira6/Downloads/lab la - Copy - Copy/project_1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent23768 C:\Users\hira6\Downloads\lab la - Copy - Copy\project_1\project_1.xpr
+# Log file: C:/Users/hira6/Downloads/lab la - Copy - Copy/project_1/vivado.log
+# Journal file: C:/Users/hira6/Downloads/lab la - Copy - Copy/project_1\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/hira6/Downloads/lab la - Copy - Copy/project_1/project_1.xpr}
+INFO: [Project 1-313] Project file moved from 'C:/Users/hira6/Downloads/lab la - Copy/project_1' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.1/data/ip'.
+open_project: Time (s): cpu = 00:00:19 ; elapsed = 00:00:11 . Memory (MB): peak = 1017.895 ; gain = 0.000
+update_compile_order -fileset sources_1
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/hira6/Downloads/lab la - Copy - Copy/project_1/project_1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'RF_ALU_FSM_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/hira6/Downloads/lab la - Copy - Copy/project_1/project_1.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj RF_ALU_FSM_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/hira6/Downloads/lab la - Copy - Copy/project_1/project_1.srcs/sources_1/new/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/hira6/Downloads/lab la - Copy - Copy/project_1/project_1.srcs/sources_1/new/RF.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RegisterFile
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/hira6/Downloads/lab la - Copy - Copy/project_1/project_1.srcs/sim_1/new/tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RF_ALU_FSM_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/hira6/Downloads/lab la - Copy - Copy/project_1/project_1.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/hira6/Downloads/lab la - Copy - Copy/project_1/project_1.sim/sim_1/behav/xsim'
+"xelab -wto 75ee8acdb28a4627abb7676c50734e74 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot RF_ALU_FSM_tb_behav xil_defaultlib.RF_ALU_FSM_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto 75ee8acdb28a4627abb7676c50734e74 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot RF_ALU_FSM_tb_behav xil_defaultlib.RF_ALU_FSM_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.RegisterFile
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.RF_ALU_FSM_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot RF_ALU_FSM_tb_behav
+ERROR: [Common 17-165] Too many positional options when parsing '-notrace', please type 'webtalk -help' for usage info.
+
+INFO: [USF-XSim-69] 'elaborate' step finished in '5' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/hira6/Downloads/lab la - Copy - Copy/project_1/project_1.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "RF_ALU_FSM_tb_behav -key {Behavioral:sim_1:Functional:RF_ALU_FSM_tb} -tclbatch {RF_ALU_FSM_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.1
+Time resolution is 1 ps
+source RF_ALU_FSM_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Time | State | ALUctl | ALUout | Zero | x1 | x2 | x3 | x4 | x31 | x11
+0 | xxxx   | 0000    | 00000000  | 1   | 00000000 | 00000000 | 00000000 | 00000000 | 00000000 | 00000000
+20000 | 0000   | 0000    | 00000000  | 1   | 00000000 | 00000000 | 00000000 | 00000000 | 00000000 | 00000000
+25000 | 0001   | 0000    | 00000000  | 1   | 00000000 | 00000000 | 00000000 | 00000000 | 00000000 | 00000000
+35000 | 0001   | 0000    | 00000000  | 1   | 10101010 | 00000000 | 00000000 | 00000000 | 00000000 | 00000000
+45000 | 0001   | 0000    | 00000000  | 1   | 10101010 | 01010101 | 00000000 | 00000000 | 00000000 | 00000000
+55000 | 0001   | 0000    | 00000000  | 1   | 10101010 | 01010101 | 00000005 | 00000000 | 00000000 | 00000000
+65000 | 0010   | 0000    | 00000000  | 1   | 10101010 | 01010101 | 00000005 | 00000000 | 00000000 | 00000000
+75000 | 0010   | 0010    | 11111111  | 0   | 10101010 | 01010101 | 00000005 | 00000000 | 00000000 | 00000000
+85000 | 0010   | 0010    | 11111111  | 0   | 10101010 | 01010101 | 00000005 | 11111111 | 00000000 | 00000000
+95000 | 0010   | 0110    | 0f0f0f0f  | 0   | 10101010 | 01010101 | 00000005 | 11111111 | 00000000 | 00000000
+105000 | 0010   | 0000    | 00000000  | 1   | 10101010 | 01010101 | 00000005 | 11111111 | 00000000 | 00000000
+115000 | 0010   | 0001    | 11111111  | 0   | 10101010 | 01010101 | 00000005 | 11111111 | 00000000 | 00000000
+125000 | 0010   | 1010    | 11111111  | 0   | 10101010 | 01010101 | 00000005 | 11111111 | 00000000 | 00000000
+135000 | 0010   | 1000    | 20202020  | 0   | 10101010 | 01010101 | 00000005 | 11111111 | 00000000 | 00000000
+145000 | 0010   | 1001    | 08080808  | 0   | 10101010 | 01010101 | 00000005 | 11111111 | 00000000 | 00000000
+155000 | 0011   | 1001    | 08080808  | 0   | 10101010 | 01010101 | 00000005 | 11111111 | 00000000 | 00000000
+165000 | 0011   | 0110    | 00000000  | 1   | 10101010 | 01010101 | 00000005 | 11111111 | 00000000 | 00000000
+175000 | 0011   | 0110    | 00000000  | 1   | 10101010 | 01010101 | 00000005 | 11111111 | 00000001 | 00000000
+185000 | 0100   | 0110    | 00000000  | 1   | 10101010 | 01010101 | 00000005 | 11111111 | 00000001 | 00000000
+195000 | 0100   | 0110    | 00000000  | 1   | 10101010 | 01010101 | 00000005 | 11111111 | 00000001 | a5a5a5a5
+205000 | 0100   | 0110    | a5a5a5a0  | 0   | 10101010 | 01010101 | 00000005 | 11111111 | 00000001 | a5a5a5a5
+215000 | 0101   | 0110    | a5a5a5a0  | 0   | 10101010 | 01010101 | 00000005 | 11111111 | 00000001 | a5a5a5a5
+Simulation finished.
+$stop called at time : 225 ns : File "C:/Users/hira6/Downloads/lab la - Copy - Copy/project_1/project_1.srcs/sim_1/new/tb.v" Line 154
+xsim: Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 1017.895 ; gain = 0.000
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'RF_ALU_FSM_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:11 ; elapsed = 00:00:20 . Memory (MB): peak = 1017.895 ; gain = 0.000
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7a35ticpg236-1L
+INFO: [Device 21-403] Loading part xc7a35ticpg236-1L
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.022 . Memory (MB): peak = 1115.691 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 421 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+WARNING: [Netlist 29-101] Netlist 'RF_ALU_TOP' is not ideal for floorplanning, since the cellview 'RegisterFile' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
+INFO: [Project 1-479] Netlist was created with Vivado 2020.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [C:/Users/hira6/Downloads/lab la - Copy - Copy/project_1/project_1.srcs/constrs_1/new/lab7.xdc]
+Finished Parsing XDC File [C:/Users/hira6/Downloads/lab la - Copy - Copy/project_1/project_1.srcs/constrs_1/new/lab7.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1225.855 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:23 ; elapsed = 00:00:20 . Memory (MB): peak = 1427.910 ; gain = 410.016
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7a35ticpg236-1L
+Top: RF_ALU_TOP
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2153.801 ; gain = 237.508
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'RF_ALU_TOP' [C:/Users/hira6/Downloads/lab la - Copy - Copy/project_1/project_1.srcs/sources_1/new/top_7.v:9]
+INFO: [Synth 8-6157] synthesizing module 'FSM' [C:/Users/hira6/Downloads/lab la - Copy - Copy/project_1/project_1.srcs/sources_1/new/FSM.v:10]
+	Parameter ST_INIT bound to: 4'b0000 
+	Parameter ST_LOAD_A bound to: 4'b0001 
+	Parameter ST_LOAD_B bound to: 4'b0010 
+	Parameter ST_OP_SELECT bound to: 4'b0011 
+	Parameter ST_READ bound to: 4'b0100 
+	Parameter ST_WRITE bound to: 4'b0101 
+INFO: [Synth 8-6155] done synthesizing module 'FSM' (1#1) [C:/Users/hira6/Downloads/lab la - Copy - Copy/project_1/project_1.srcs/sources_1/new/FSM.v:10]
+INFO: [Synth 8-6157] synthesizing module 'RegisterFile' [C:/Users/hira6/Downloads/lab la - Copy - Copy/project_1/project_1.srcs/sources_1/new/RF.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'RegisterFile' (2#1) [C:/Users/hira6/Downloads/lab la - Copy - Copy/project_1/project_1.srcs/sources_1/new/RF.v:8]
+INFO: [Synth 8-6157] synthesizing module 'ALU' [C:/Users/hira6/Downloads/lab la - Copy - Copy/project_1/project_1.srcs/sources_1/new/ALU.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'ALU' (3#1) [C:/Users/hira6/Downloads/lab la - Copy - Copy/project_1/project_1.srcs/sources_1/new/ALU.v:8]
+INFO: [Synth 8-6157] synthesizing module 'sevenseg_basys3' [C:/Users/hira6/Downloads/lab la - Copy - Copy/project_1/project_1.srcs/sources_1/new/SEVENSEG.v:8]
+INFO: [Synth 8-226] default block is never used [C:/Users/hira6/Downloads/lab la - Copy - Copy/project_1/project_1.srcs/sources_1/new/SEVENSEG.v:36]
+INFO: [Synth 8-226] default block is never used [C:/Users/hira6/Downloads/lab la - Copy - Copy/project_1/project_1.srcs/sources_1/new/SEVENSEG.v:52]
+INFO: [Synth 8-6155] done synthesizing module 'sevenseg_basys3' (4#1) [C:/Users/hira6/Downloads/lab la - Copy - Copy/project_1/project_1.srcs/sources_1/new/SEVENSEG.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'RF_ALU_TOP' (5#1) [C:/Users/hira6/Downloads/lab la - Copy - Copy/project_1/project_1.srcs/sources_1/new/top_7.v:9]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 2206.008 ; gain = 289.715
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 2223.957 ; gain = 307.664
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 2223.957 ; gain = 307.664
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.013 . Memory (MB): peak = 2223.957 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/hira6/Downloads/lab la - Copy - Copy/project_1/project_1.srcs/constrs_1/new/lab7.xdc]
+Finished Parsing XDC File [C:/Users/hira6/Downloads/lab la - Copy - Copy/project_1/project_1.srcs/constrs_1/new/lab7.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2340.145 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 2353.539 ; gain = 437.246
+15 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 2353.539 ; gain = 437.246
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue Mar 31 21:13:21 2026...
